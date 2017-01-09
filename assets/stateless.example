@@ -1,0 +1,9 @@
+import React from 'react';
+import './App.css';
+import LabelSwitcher from './components/LabelSwitcher';
+
+export default App = () => (
+  <div className="App">
+    <LabelSwitcher labelOn="Hello" labelOff="GoodBye" />
+  </div>
+);

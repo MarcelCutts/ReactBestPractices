@@ -1,0 +1,12 @@
+import React from 'react';
+
+export default class SimpleForm extends React.Component {
+  render() {
+    return <form className="SimpleForm">
+      <input className="SimpleForm__input" type="text" />
+      <input
+        className="SimpleForm__submit SimpleForm__submit--disabled"
+        type="submit" />
+    </form>;
+    }
+}

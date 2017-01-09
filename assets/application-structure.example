@@ -1,0 +1,11 @@
+/src
+  /components
+    /footer
+    ...
+  /pages
+    /home
+    ...
+  /services
+    /api
+    ...
+  index.js

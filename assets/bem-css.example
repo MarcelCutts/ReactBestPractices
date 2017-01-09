@@ -1,0 +1,4 @@
+.SimpleForm { }
+.SimpleForm__input { }
+.SimpleForm__submit { }
+.SimpleForm__submit--disabled { }
