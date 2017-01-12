@@ -28,8 +28,6 @@ import createTheme from "spectacle/lib/themes/default";
 // Require CSS
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
-require("./presentation.css");
-
 
 const images = {
   twitterLogo: require("../assets/twitter-logo.png"),
@@ -380,7 +378,10 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={["slide"]} bgColor="badgerWhite">
-            <Heading size={3}>React Developer Tools</Heading>
+            <Heading size={2}>React Developer Tools</Heading>
+          </Slide>
+
+          <Slide transition={["slide"]} bgColor="badgerWhite">
             <Image src={images.reactDevTools} />
           </Slide>
 
@@ -392,7 +393,7 @@ export default class Presentation extends React.Component {
               Core strength
             </Heading>
             <Link href="https://github.com/ryanmcdermott/clean-code-javascript">
-              {"https://github.com/MicheleBertoli/css-in-js"}
+              {"https://github.com/ryanmcdermott/clean-code-javascript"}
             </Link>
           </Slide>
 
