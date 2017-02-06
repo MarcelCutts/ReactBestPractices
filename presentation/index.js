@@ -75,21 +75,25 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
+
           <Slide transition={["slide"]} bgColor="badgerWhite">
             <Heading size={1} fit caps lineHeight={1} textColor="badgerRed">
               Best Practices
             </Heading>
           </Slide>
+
           <Slide transition={["slide"]} bgColor="badgerWhite">
             <Heading size={1} fit caps lineHeight={1} textColor="badgerRed" textFont="Gloria Hallelujah">
               "Best Practices"
             </Heading>
           </Slide>
+
           <Slide transition={["slide"]} bgColor="badgerWhite">
             <Heading size={1} fit caps lineHeight={1} textColor="badgerRed">
               Structure
             </Heading>
           </Slide>
+
           <Slide transition={["slide"]} bgColor="badgerWhite">
             <Heading size={2} caps lineHeight={1} textColor="badgerRed">
               Application Structure
@@ -108,9 +112,7 @@ export default class Presentation extends React.Component {
             <Heading size={5} caps lineHeight={1} textColor="badgerBlack" margin="20px 0">
               Components library - as flat as possible!
             </Heading>
-            <Appear>
-              <Image src={images.flatComponents} />
-            </Appear>
+            <Image src={images.flatComponents} />
           </Slide>
 
           <Slide transition={["slide"]} bgColor="badgerWhite">
@@ -120,28 +122,59 @@ export default class Presentation extends React.Component {
             <Heading size={5} caps lineHeight={1} textColor="badgerBlack" margin="20px 0">
               Cohabiting + self sufficient
             </Heading>
-            <Appear>
-              <Image src={images.componentStructure} />
-            </Appear>
+            <Image src={images.componentStructure} />
           </Slide>
 
           <Slide transition={["slide"]} bgColor="badgerWhite">
-            <Heading size={5} caps lineHeight={1} textColor="badgerRed">
-              Class Component
+            <Heading size={2} caps fit lineHeight={1} textColor="badgerRed">
+              Component (Class)
             </Heading>
             <CodePane
               lang="jsx"
               source={require("raw!../assets/class.example")}
-              margin="40px auto"
+              margin="40px auto 0"
             />
-            <Heading size={5} caps lineHeight={1} textColor="badgerRed">
-              Functional Component
+          </Slide>
+
+          <Slide transition={["slide"]} bgColor="badgerWhite">
+            <Heading size={2} caps fit lineHeight={1} textColor="badgerRed">
+              Component (Functional)
             </Heading>
             <CodePane
               lang="jsx"
               source={require("raw!../assets/stateless.example")}
-              margin="40px auto"
+              margin="40px auto 0"
             />
+          </Slide>
+
+
+          <Slide transition={["slide"]} bgColor="badgerWhite">
+            <Heading size={1} fit lineHeight={1} textColor="badgerRed">
+              COMPONENT (createClass)
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../assets/createclass.example")}
+              margin="40px auto 0"
+            />
+          </Slide>
+
+          <Slide transition={["slide"]} bgColor="badgerWhite">
+            <Heading size={4} caps lineHeight={1} textColor="badgerRed">
+              Functional Components
+            </Heading>
+            <Heading size={4} caps lineHeight={1} textColor="badgerRed">
+               >
+            </Heading>
+            <Heading size={4} caps lineHeight={1} textColor="badgerRed">
+              Class Components
+            </Heading>
+            <Heading size={4} caps lineHeight={1} textColor="badgerRed">
+               > > >
+            </Heading>
+            <Heading size={4} caps lineHeight={1} textColor="badgerRed">
+              createClass Components
+            </Heading>
           </Slide>
 
           <Slide transition={["slide"]} bgColor="badgerWhite">
@@ -149,6 +182,7 @@ export default class Presentation extends React.Component {
               Styles
             </Heading>
           </Slide>
+
           <Slide transition={["slide"]} bgColor="badgerWhite">
             <Heading size={2} caps lineHeight={1} textColor="badgerRed">
               Styles
@@ -174,6 +208,7 @@ export default class Presentation extends React.Component {
               </Appear>
             </List>
           </Slide>
+
           <Slide transition={["slide"]} bgColor="badgerWhite">
             <Heading size={2} caps lineHeight={1} textColor="badgerRed">
               Styles
@@ -193,6 +228,7 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
+
           <Slide transition={["slide"]} bgColor="badgerWhite">
             <Heading size={2} caps lineHeight={1} textColor="badgerRed">
               Styles
@@ -233,9 +269,10 @@ export default class Presentation extends React.Component {
               </Layout>
             </Heading>
           </Slide>
+
           <Slide transition={["slide"]} bgColor="badgerWhite">
             <Heading size={2} caps lineHeight={1} textColor="badgerRed">
-              Styles
+              Styles (BEM)
             </Heading>
             <Heading size={4} textColor="badgerBlack" margin="20px 10px 10px 10px">React</Heading>
             <CodePane
@@ -243,7 +280,13 @@ export default class Presentation extends React.Component {
               source={require("raw!../assets/bem-html.example")}
               margin="20px auto"
             />
-          <Heading size={4} textColor="badgerBlack" margin="40px 10px 10px 10px">CSS</Heading>
+          </Slide>
+
+          <Slide transition={["slide"]} bgColor="badgerWhite">
+            <Heading size={2} caps lineHeight={1} textColor="badgerRed">
+              Styles (BEM)
+            </Heading>
+            <Heading size={4} textColor="badgerBlack" margin="40px 10px 10px 10px">CSS</Heading>
             <CodePane
               lang="css"
               source={require("raw!../assets/bem-css.example")}
@@ -259,9 +302,10 @@ export default class Presentation extends React.Component {
               CSS Modules
             </Heading>
           </Slide>
+
           <Slide transition={["slide"]} bgColor="badgerWhite">
             <Heading size={2} caps lineHeight={1} textColor="badgerRed">
-              Styles
+              Styles (CSS Modules)
             </Heading>
             <Heading size={4} textColor="badgerBlack" margin="20px 10px 10px 10px">React</Heading>
             <CodePane
@@ -269,18 +313,23 @@ export default class Presentation extends React.Component {
               source={require("raw!../assets/css-modules-js.example")}
               margin="20px auto"
             />
-            <Heading size={4} textColor="badgerBlack" margin="40px 10px 10px 10px">CSS</Heading>
-              <CodePane
-                lang="css"
-                source={require("raw!../assets/css-modules-css.example")}
-                margin="20px auto"
-              />
           </Slide>
-
 
           <Slide transition={["slide"]} bgColor="badgerWhite">
             <Heading size={2} caps lineHeight={1} textColor="badgerRed">
-              Styles
+              Styles (CSS Modules)
+            </Heading>
+            <Heading size={4} textColor="badgerBlack" margin="40px 10px 10px 10px">CSS</Heading>
+            <CodePane
+              lang="css"
+              source={require("raw!../assets/css-modules-css.example")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={["slide"]} bgColor="badgerWhite">
+            <Heading size={2} caps lineHeight={1} textColor="badgerRed">
+              Styles (CSS Modules)
             </Heading>
             <Heading size={4} textColor="badgerBlack" margin="40px 10px 10px 10px">HTML</Heading>
               <CodePane
@@ -302,13 +351,11 @@ export default class Presentation extends React.Component {
             </Link>
           </Slide>
 
-
           <Slide transition={["slide"]} bgColor="badgerWhite">
             <Heading size={1} fit caps lineHeight={1} textColor="badgerRed">
               Testing
             </Heading>
           </Slide>
-
 
           <Slide transition={["slide"]} bgColor="badgerWhite">
             <Heading size={2} caps lineHeight={1} textColor="badgerRed" margin="0 0 40px 0">

@@ -1,0 +1,7 @@
+var Greeting = React.createClass({
+  render: function() {
+    return <div className="App">
+      <LabelSwitcher labelOn="Hello" labelOff="GoodBye" />
+    </div>
+  }
+});
